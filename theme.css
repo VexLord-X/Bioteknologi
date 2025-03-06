@@ -1,0 +1,209 @@
+/* FLOATING BUTTON */
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.fab svg {
+    width: 28px;
+}
+
+/* POPUP FAB MENU */
+.popup-menu {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.popup-menu button {
+    background: none;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.popup-menu button:hover {
+    border-radius: 5px;
+}
+
+/* Tampilkan popup */
+.popup-menu.show {
+    display: flex;
+}
+
+/* Saphire Mode */
+.light-mode {
+    background: #064273;
+    color: #76b6c4;
+}
+
+.light-mode nav {
+    background: #0095ff;
+}
+
+.light-mode .logo {
+    color: #def3f6;
+}
+
+.light-mode ul li a {
+    color: #def3f6;
+}
+
+.light-mode ul li a:hover,
+.light-mode ul li a.active {
+    background: #7fcdff;
+    color: #def3f6;
+}
+
+.light-mode #icon {
+    background-color: #042540;
+}
+
+.light-mode #icon svg {
+    color: #fff;
+}
+
+.light-mode #icon:hover {
+    background-color: #174b76;
+}
+
+.light-mode .fab {
+    background: #042540;
+}
+
+.light-mode .fab svg {
+    color: #fff;
+}
+
+.light-mode .fab:hover {
+    background: #125c98;
+}
+
+.light-mode .info-box {
+    background: #e0f2ff;
+    color: #064273;
+}
+
+.light-mode .text-box {
+    background: #e0f2ff;
+    color: #064273;
+}
+
+.light-mode .open-popup {
+    background: #7fcdff;
+    color: #064273;
+}
+
+.light-mode .content-box {
+    background: #e0f2ff;
+    color: #064273;
+}
+
+.light-mode .popup-content {
+    background: white;
+    color: #125c98;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 700px;
+    position: relative;
+   
+}
+.light-mode .close-popup {
+    background-color: #ffffff;
+    color: #0095ff;
+}
+
+
+/* Emerald Mode */
+.emerald-mode {
+    background: #02291d;
+    color: #2D8F4E;
+}
+
+.emerald-mode nav {
+    background: #2D8F4E;
+}
+
+.emerald-mode .logo {
+    color: #01140e;
+}
+
+.emerald-mode ul li a {
+    color: #56e285;
+}
+
+.emerald-mode ul li a:hover,
+.emerald-mode ul li a.active {
+    background: #96DEAE;
+    color: #000;
+}
+
+.emerald-mode #icon {
+    background-color: #03241a;
+}
+
+.emerald-mode #icon svg {
+    color: #56e285;
+}
+
+.emerald-mode #icon:hover {
+    background-color: #085039;
+}
+
+.emerald-mode .fab {
+    background: #01140e;
+}
+
+.emerald-mode .fab svg {
+    color: #56e285;
+}
+
+.emerald-mode .fab:hover {
+    background: #065b40;
+}
+
+.emerald-mode .info-box {
+    background: #033026;
+    color: #96DEAE;
+}
+
+.emerald-mode .text-box {
+    background: #033026;
+    color: #96DEAE;
+}
+
+.emerald-mode .open-popup {
+    background: #96DEAE;
+    color: #033026;
+}
+
+.emerald-mode .content-box {
+    background: #033026;
+    color: #96DEAE;
+}
+
+.emerald-mode .close-popup {
+    background-color: #ffffff;
+    color: #033026;
+}

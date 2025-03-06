@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    display: none;
+}
+
+.aktif {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.justify-text {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+
+body {
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* NAVBAR STYLE */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+/* MENU NAVIGATION */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+/* MENU ICON */
+
+#icon {
+    padding: 5px 7px 3px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#icon svg {
+    height: 28px;
+    transition: all 0.3s ease;
+}
+
+#checkbox, #icon {
+    display: none;
+}

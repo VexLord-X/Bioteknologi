@@ -1,0 +1,114 @@
+/* Tampilan HP */
+@media screen and (max-width: 768px) {
+nav ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 71px);
+        background: #61e6be;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: none;
+        margin-top: 71px;
+    }
+
+nav ul li {
+        display: block;
+        padding: 10px 15px;
+    }
+
+nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+nav #icon {
+        display: block;
+    }
+
+nav #checkbox:checked ~ ul {
+        display: block;
+    }
+
+/* Light Mode Mobile */
+
+    .light-mode ul {
+        background: #042540;
+    }
+
+    .light-mode nav {
+        background: #0095ff;
+    }
+
+    .light-mode ul li a {
+        color: #064273;
+    }
+
+    /* Dark Mode Mobile */
+    .emerald-mode ul {
+        background: #01140e;
+    }
+
+    .emerald-mode nav {
+        background: #2D8F4E;
+    }
+
+    .emerald-mode ul li a {
+        color: #96DEAE;
+    }
+
+
+    /* PAGE 1 */
+    .container {
+        flex-direction: column; /* Semua elemen vertikal */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .image {
+        width: 90%;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .info-box, .text-box {
+        max-width: 90%;
+        text-align: justify;
+        margin: 10px auto;
+    }
+
+    /* Manual setting: Gambar 2 di atas teks 3 */
+    .image.gambar-2 {
+        order: -1;
+    }
+
+    /* Page 2 */
+    .content-box {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    .popup-content {
+        max-width: 90%; /* Perbesar lebar popup */
+        width: 80vw; /* Pastikan menyesuaikan layar */
+        padding: 20px;
+        max-height: 90vh; /* Lebih tinggi agar nyaman dilihat */
+        overflow-y: auto; /* Scroll jika konten terlalu banyak */
+    }
+    
+
+    .popup-image {
+        max-width: 80%;
+    }
+
+    button.open-popup {
+        width: 100%;
+        padding: 12px;
+    }
+   
+}
