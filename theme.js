@@ -5,11 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const darkModeBtn = document.getElementById("emerald-mode");
     const body = document.body;
 
-    // Cek LocalStorage
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-        body.classList.add(savedTheme);
-    }
+    document.addEventListener("DOMContentLoaded", function () {
+        let currentTheme = localStorage.getItem("theme");
+
+        // Jika belum ada tema tersimpan, default ke Emerald Mode
+        if (!currentTheme) {
+            document.body.classList.add("emerald-mode");
+            localStorage.setItem("theme", "emerald-mode");
+        } else {
+            document.body.classList.add(currentTheme); // Jika ada, gunakan yang tersimpan
+        }
+        });
+
 
     // Hilangkan efek flicker saat halaman dimuat
     setTimeout(() => {
